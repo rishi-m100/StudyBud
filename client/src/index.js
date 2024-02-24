@@ -35,7 +35,7 @@ root.render(
     </center>
 
     <br />
-    <Button text="yippee" />
+    
   </div>
   // </React.StrictMode>
 );
