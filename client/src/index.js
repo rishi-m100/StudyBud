@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import Button from "./components/Button";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -26,6 +27,7 @@ root.render(
     <Card {...cardProps} />
     <Card {...cardProps} />
     <Card {...cardProps2} />
+    <Button text = "yippee" />
   </div>
   // </React.StrictMode>
 );
