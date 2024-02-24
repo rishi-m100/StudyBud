@@ -1,14 +1,19 @@
   .dynamic-button {
     font-size: 20px;
     padding: 10px 20px;
-    border: 2px;
+    border: 2px solid black;
     border-radius: 5px;
-    background-color: rgb(237,220,210);
-    color: #fff;
+    background-color: rgb(208,244,222);
+    color: black;
     cursor: pointer;
-    transition: background-color 20s ease;
+    transition: background-color .4s ease;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+
   }
   
   .dynamic-button:hover {
-    background-color: #2980b9;
+    background-color: rgb(184,184,255);
+    color:white;
   }
