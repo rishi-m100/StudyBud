@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("/api/data")
+      .get("http://127.0.0.1:5000/api/data")
       .then((response) => {
         setData(response.data);
       })
