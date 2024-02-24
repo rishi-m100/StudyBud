@@ -9,25 +9,33 @@ import Button from "./components/Button";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const cardProps = {
-  title: "Welcome to My App",
-  content: "This is the content of the card.",
+const cardProps1 = {
+  title: "Upload",
+  content: "Upload your files here.",
 };
 
 const cardProps2 = {
-  title: "hi",
-  content: "ronitplayz",
+  title: "Practice",
+  content: "See your practice questions.",
+};
+
+const cardProps3 = {
+  title: "Study Plan",
+  content: "View your study plan here.",
 };
 
 root.render(
   // <React.StrictMode>
   <div>
     <Header />
-    <Card {...cardProps} />
-    <Card {...cardProps} />
-    <Card {...cardProps} />
-    <Card {...cardProps2} />
-    <Button text = "yippee" />
+    <center>
+      <Card {...cardProps1} />
+      <Card {...cardProps2} />
+      <Card {...cardProps3} />
+    </center>
+
+    <br />
+    <Button text="yippee" />
   </div>
   // </React.StrictMode>
 );
