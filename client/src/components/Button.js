@@ -3,7 +3,7 @@ import "../style/button.css";
 
 const Button = ({text}) => {
     return (
-     <button type = "button"> {text} </button>
+     <button className="dynamic-button" type = "button"> {text} </button>
     );
   };
   
