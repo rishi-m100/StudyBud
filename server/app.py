@@ -6,7 +6,7 @@ CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 @app.route('/api/data')
 def hello():
-    return 'Hello, World!'
+    return 'NO  , =!'
 
 
 if __name__ == '__main__':
