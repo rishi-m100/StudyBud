@@ -11,16 +11,19 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const cardProps1 = {
   title: "Upload",
+  button: "Upload",
   content: "Upload your files here.",
 };
 
 const cardProps2 = {
   title: "Practice",
+  button: "Practice",
   content: "See your practice questions.",
 };
 
 const cardProps3 = {
   title: "Study Plan",
+  button: "Study",
   content: "View your study plan here.",
 };
 
