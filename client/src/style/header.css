@@ -1,34 +1,52 @@
-nav{
+nav {
     justify-content: right;
     text-align: right;
-    background-color: rgb(189,224,254)
-    ;
-    padding: 10px;
-    padding-right: 70px;
-
+    background: linear-gradient(135deg, rgb(184,184,255),rgb(208,244,222)); /* Update the gradient colors */
+    padding: 20px;
+    padding-left: 70px;
+}
+@keyframes textGradient {
+    0% {
+        background-position: 0% 50%;
+        background-color: rgb(184,184,255); /* Start color */
+    }
+    33% {
+        background-position: 33% 50%;
+        background-color: black; /* Middle color */
+    }
+    66% {
+        background-position: 66% 50%;
+        background-color: #6c8cff; /* End color */
+    }
+    100% {
+        background-position: 100% 50%;
+        background-color: rgb(184,184,255); /* Start color */
+    }
 }
 
-nav h1{
+nav h1 {
     display: inline-block;
     margin: 10px;
-
+    color: transparent; /* Set text color to transparent */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    animation: textGradient 15s linear infinite; /* Apply animation */
 }
+ 
 
-#header-img{
+#header-img {
     width: 100%;
 }
 
 .image-container {
     position: relative;
-    /* display: inline-block; */
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(208,244,222,0.2);
-  }
-  
+    background-color: rgba(0, 0, 0, 0.2); /* Update overlay color */
+}

@@ -6,10 +6,10 @@ const Header = () => {
     <header>
       {/* <h1>{title}</h1> */}
       <nav>
-        <h1>home</h1>
-        <h1>upload</h1>
-        <h1>practice</h1>
-        <h1>study plan</h1>
+        <h1>Home</h1>
+        <h1>Upload</h1>
+        <h1>Practice</h1>
+        <h1>Study plan</h1>
       </nav>
 {/* 
       <div className="image-container">
