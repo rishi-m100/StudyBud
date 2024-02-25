@@ -5,7 +5,8 @@ import "../style/header.css";
 const Header = () => {
   return (
     <header>
-      {/* <h1>{title}</h1> */}
+      {/* <h1>{title}</h1> */  }
+      
       <nav>
         <img className="logo" src="assets/logo3.png" />
         <a href="#"><h1>Home</h1></a>
