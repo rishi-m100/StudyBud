@@ -1,0 +1,1 @@
+ChatCompletionMessage(content="I see that you haven't provided any specific documents for me to create a study guide from. Please upload the necessary documents such as lecture notes, homework assignments, and syllabi so that I can generate a detailed study guide for you.", role='assistant', function_call=None, tool_calls=None)

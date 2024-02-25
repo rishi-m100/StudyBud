@@ -31,7 +31,7 @@ function Upload() {
         // Set the file contents to state to display them
         setFileContents((prevFileContents) => [
           ...prevFileContents,
-          response.data,
+          response.data.text, // Assuming the response contains the text
         ]);
       })
       .catch((error) => {
@@ -52,7 +52,11 @@ function Upload() {
       />
       {/* Display the uploaded file names */}
       {fileNames.map((fileName, index) => (
-        <p key={index}>Uploaded File: {fileName}</p>
+        <div key={index}>
+          <p>Uploaded File: {fileName}</p>
+          {/* Display the corresponding file content */}
+          <p>File Content: {fileContents[index]}</p>
+        </div>
       ))}
     </div>
   );
