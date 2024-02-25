@@ -54,6 +54,6 @@ nav h1 { /*text on the header */
 
 .logo{
     margin-right: auto; /* Pushes the logo to the left */
-    margin-left: 20px; /* Add margin to the left for spacing */
-    width: 100px;
+    margin-left: 0px; /* Add margin to the left for spacing */
+    width: 110px;
 }

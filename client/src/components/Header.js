@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       {/* <h1>{title}</h1> */}
       <nav>
-        <img className="logo" src="assets/learning.jpg" />
+        <img className="logo" src="assets/logo3.png" />
         <h1>Home</h1>
         <h1>Upload</h1>
         {/* <h1>Practice</h1> */}
