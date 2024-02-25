@@ -1,0 +1,83 @@
+# Study Guide: Intro to Unit Testing
+
+## Important Topics to Focus On:
+- **Why do we write automated tests for code?**
+    - Debugging
+    - Ensuring code correctness
+    - Risk reduction
+    - Improving software quality
+    
+- **Types of Testing:**
+    - Unit testing
+    - Integration testing
+    - End-to-end testing
+    
+- **What are tests?**
+    - Automated pieces of code
+    - Make assertions about code output
+    
+- **What to test:**
+    - Small functions vs. complex functions
+    - Testing the API not the implementation
+    - Writing test suites
+    
+- **Writing Test Suites:**
+    - Creating test cases
+    - Covering essential requirements and paths
+    - Writing good test cases
+    
+- **Integration Testing:**
+    - Testing multiple components together
+    - Balancing unit and integration tests
+    
+- **End-to-End Testing:**
+    - Testing the entire application
+    - Core user journeys testing
+    
+- **Improving Test Suites:**
+    - DRY principle
+    - Mocking libraries
+    - Writing tests regularly
+
+## Study Tips:
+- Understand the importance of automated testing
+- Practice writing test cases for various scenarios
+- Focus on creating effective test suites
+- Learn how to balance unit and integration testing
+- Familiarize yourself with end-to-end testing procedures
+- Practice improving test suites by following the DRY principle
+- Explore mocking libraries and their applications
+
+## Exam Preparation Schedule:
+1. **Week 1-2:**
+    - Understand the basics of automated testing
+    - Learn about unit testing and its significance
+    - Practice writing test cases for simple functions
+    
+2. **Week 3-4:**
+    - Dive into integration testing concepts
+    - Explore the balance between unit and integration testing
+    - Practice creating effective test suites
+    
+3. **Week 5-6:**
+    - Focus on end-to-end testing and core user journey testing
+    - Practice improving test suites following the DRY principle
+    - Explore mocking libraries and their applications
+
+4. **Week 7-8:**
+    - Review all testing concepts covered
+    - Practice writing test cases for various scenarios
+    - Prepare for the exam by revisiting key topics
+
+## Sample Practice Questions:
+1. What are the main reasons for writing automated tests for code?
+2. Explain the difference between unit testing and integration testing.
+3. Why is it important to test the API rather than the implementation?
+4. Discuss the significance of test suites in the context of software testing.
+5. How can the DRY principle be applied to improve test suites?
+
+## Additional Resources:
+- Recommended Textbook: "Introduction to Software Testing" by Paul Ammann and Jeff Offutt
+- Practice coding platforms for writing test cases: LeetCode, HackerRank
+
+Remember to regularly practice writing test cases and seek clarification from your mentor or peers if you encounter any difficulties. Good luck with your studies!', 

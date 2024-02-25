@@ -7,7 +7,7 @@ from openai import OpenAI
 import json
 import os
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='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')
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
@@ -27,6 +27,7 @@ def upload():
         return jsonify({'error': 'No file part'})
 
     file = request.files['file']
+    print("2")
 
     # Check if the file is empty
     if file.filename == '':
@@ -37,27 +38,55 @@ def upload():
         return jsonify({'error': 'Only PDF and mp3 files are supported'})
 
     if file.filename.endswith('.mp3'):
-        sound = AudioSegment.from_mp3("transcript.mp3")
+        sound = AudioSegment.from_mp3(file.stream)
         sound.export("transcript.wav", format="wav")
         AUDIO_FILE = "transcript.wav"
         r = sr.Recognizer()
         with sr.AudioFile(AUDIO_FILE) as source:
-            audio = r.record(source)  # read the entire audio file                  
-
+            audio = r.record(source, duration=100)  # read the entire audio file                  
+            print(audio)
             print("Transcription: " + r.recognize_google(audio))
+            text=r.recognize_google(audio)
+            text = str(text)
+            print(type(text))
+            
+        converted_filename = generate_unique_filename(file.filename)
+        completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a study guide generator. I will provide you a transcription of a lectire video. You will generate a detailed study guide based on this information. It should give a timeline, study tips, and a schedule. It should also provide similar practice queestions and highlight/emphasize important topics."},
+            {"role": "user", "content": text}
+        ]
+        )
+        print("3")
+
+    # Write completion to a unique filename
+        with open(converted_filename, 'w') as f:
+            string = str(completion.choices[0].message)
+            string = string.replace('\\n', '\n')
+            string = string.replace("ChatCompletionMessage(content='","")
+            string = string.replace("role='assistant', function_call=None, tool_calls=None)","")
+            f.write(string)
+
+        with open('extracted_text.txt', 'w') as f:
+            f.write(text)
+        response = jsonify({'text': string})
 
     # Extract text from the PDF file
-    pdf_text = extract_text_from_pdf(file)
+    else:
+        pdf_text = extract_text_from_pdf(file)
 
-    with open('extracted_text.txt', 'w') as f:
-        f.write(pdf_text)
+        with open('extracted_text.txt', 'w') as f:
+            f.write(pdf_text)
 
     # Generate a unique filename based on the uploaded file name
-    converted_filename = generate_unique_filename(file.filename)
 
     # Return the extracted text
-    response = jsonify({'text': pdf_text})
+        response = jsonify({'text': pdf_text})
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')  # Add CORS header
+    
+    converted_filename = generate_unique_filename(file.filename)
+
     return response
 
 

@@ -1,0 +1,80 @@
+# Computer Science 128 Study Guide
+
+## Week 3
+
+### Monday: Vectors & Compound Data
+
+- **Vectors**:
+  - Declare using `std::vector<type> name = {};`
+  - Access elements using `vector_name[index]`
+  - Methods like `push_back()`, `size()`, `front()`
+- **Compound Data**:
+  - Use standard libraries like `std` for containers
+  - Compound data examples: Vectors, maps, etc.
+
+### Tuesday: 2D Vector, std::vector
+
+- **2D Vector**:
+  - Similar to nested vectors
+  - Use `std::vector<std::vector<int>>`
+- **std::vector**:
+  - Functions like `.at()`, `.push_back()`
+- **String Functions**:
+  - Use `.substr()`, `.find_last_of()`
+
+### Wednesday: Navigating the Command Line
+
+- **Command Line**:
+  - Common commands: `pwd`, `ls`, `cd`, `touch`
+- **Vim Commands**:
+  - Use Vim for file editing and navigation
+- **Relative & Absolute Paths**:
+  - Understand the difference and usage of paths
+
+### Thursday: Basic Input/Output & Introduction to Design Patterns
+
+- **Input/Output**:
+  - Use `std::cout`, `std::cin` for output and input
+- **Design Patterns**:
+  - Introduction to design patterns in programming
+
+### Friday: Line by Line Debugging, Make, Git Commands
+
+- **Debugging**:
+  - Use step into, step over for debugging
+- **Make**:
+  - Build systems using Makefiles for compilation process
+- **Git Commands**:
+  - Basic Git commands like push, commit, pull, init
+
+## Study Tips:
+- Understand the concept of vectors, compound data, and basic input/output operations thoroughly.
+- Practice creating and accessing vectors and 2D vectors in different scenarios.
+- Work on debugging techniques using step into, step over for code understanding.
+- Familiarize yourself with command line navigation and basic Git commands for version control.
+
+## Study Schedule:
+- **Monday & Tuesday**: Focus on vectors, compound data, and 2D vectors.
+- **Wednesday & Thursday**: Practice command line navigation, basic I/O, and design patterns.
+- **Friday**: Review debugging techniques, Makefiles, and Git commands.
+
+## Practice Questions:
+1. How do you declare and initialize a vector in C++?
+2. Explain the difference between a vector and a 2D vector in C++.
+3. How would you iterate through a vector using a for loop in C++?
+4. What are some common Git commands for version control?
+5. How does Makefile automate the build process in C++ applications?
+
+## Important Topics:
+- Usage of vectors, compound data in C++
+- Command line navigation and basic I/O operations
+- Design patterns and debugging techniques
+- Git commands for version control and Makefile usage in C++
+
+## Additional Resources:
+- C++ references for vectors and compound data
+- Command line tutorials for efficient navigation
+- Git documentation for mastering version control
+- Makefile guides for optimizing the build process
+
+Remember to practice consistently and revise the concepts regularly to strengthen your understanding. Good luck with your studies! 📚🚀', 

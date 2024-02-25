@@ -1,0 +1,62 @@
+# Study Guide: Intro to Unit Testing - CS222 Spring 2024
+
+## Important Topics:
+- **Why Automated Tests**:
+  - Debugging
+  - Ensuring code correctness
+  - Improving software quality
+- **Types of Testing**:
+  - Unit Testing
+  - Integration Testing
+  - End-to-end Testing
+- **Writing Tests**:
+  - What to test
+  - Writing a test suite
+  - Writing good test cases
+- **Integration and End-to-End Testing**:
+  - Testing multiple components together
+  - Testing the entire application
+- **Improving Test Suites**:
+  - DRY Principle
+  - Mocking libraries
+- **Quiz Details**:
+  - Week 4: Intro to GitHub (Due this Friday)
+  - Week 5: Intro to Testing (Opened at the start of lecture, due next Friday)
+
+## Study Timeline:
+- **Week 1-2**:
+  - Understand the importance of automated testing
+  - Learn about unit, integration, and end-to-end testing
+  - Start writing basic test suites and test cases
+- **Week 3-4**:
+  - Dive into integration testing strategies
+  - Explore end-to-end testing principles
+  - Work on improving your test suites with DRY principle and mocking libraries
+- **Week 5**:
+  - Prepare for the Week 5 Quiz on Intro to Testing
+
+## Study Tips:
+- **Practice Coding**:
+  - Implement small functions and write corresponding test cases
+- **Review Regularly**:
+  - Review lecture notes and assignments to reinforce your understanding
+- **Ask Questions**:
+  - Engage with the course community and ask for help on challenging topics
+- **Utilize Office Hours**:
+  - Make use of mentor meetings for clarifications and guidance
+
+## Practice Questions:
+1. Why do we write automated tests for code? Provide at least 3 reasons.
+2. What is the purpose of a test suite in unit testing?
+3. Explain the concept of mocking in testing.
+4. When should you consider writing a test case in unit testing?
+5. Describe the differences between unit testing, integration testing, and end-to-end testing.
+
+## Schedule:
+- Week 1: Understand automated testing fundamentals
+- Week 2: Learn about unit testing and write basic test cases
+- Week 3: Explore integration testing and practice writing test suites
+- Week 4: Dive into end-to-end testing principles
+- Week 5: Review for the Intro to Testing Quiz
+
+Remember to focus on the core concepts, practice regularly, and seek help when needed. Good luck with your studies in Intro to Unit Testing!', 

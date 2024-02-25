@@ -34,7 +34,7 @@ function Upload() {
           .map((line, index) => <p key={index}>{line}</p>);
         setFileContents((prevFileContents) => [
           ...prevFileContents,
-          formattedContent,
+          formattedContent
         ]);
       })
       .catch((error) => {

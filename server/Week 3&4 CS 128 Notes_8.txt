@@ -1,0 +1,102 @@
+# C++ Study Guide
+
+## Week 3: Vectors, Compound Data, and Makefiles
+
+### Monday
+- **Topics Covered**:
+  - Vectors and Compound Data
+  - Standard Library: `std::vector`
+  - Compound Data and Iterating through Vectors
+  
+- **Key Concepts**:
+  - Understanding Vectors and Compound Data structures
+  - Working with different types of data in C++
+  - Using Standard Library functions for vector operations
+  - Iterating through vectors using for loops and `push_back()`
+
+- **Study Tips**:
+  - Practice creating, initializing, and accessing elements in vectors.
+  - Understand the differences between various data structures in C++.
+  - Experiment with iterating through vectors using different methods.
+
+### Tuesday
+- **Topics Covered**:
+  - 2D Vectors and `std::vector`
+  
+- **Key Concepts**:
+  - Introduction to 2D Vectors (Vector of Vectors)
+  - Working with nested vectors for multidimensional data storage
+  - Accessing and manipulating elements in 2D Vector arrays
+
+- **Study Tips**:
+  - Practice creating and manipulating 2D vectors for storing multidimensional data.
+  - Experiment with accessing specific elements in nested vectors.
+  
+### Wednesday
+- **Topics Covered**:
+  - Navigating the Command Line
+  - Compilation and Execution in C++
+  
+- **Key Concepts**:
+  - Understanding basic Command Line commands for navigation and file operations
+  - Compilation Pipeline in C++ from source code to executable
+  - Using clang++ for compiling and linking C++ programs
+  
+- **Study Tips**:
+  - Practice using Command Line to navigate directories and perform basic file operations.
+  - Understand the steps involved in compiling and executing C++ programs.
+
+### Thursday
+- **Topics Covered**:
+  - Build Systems and Makefiles
+  
+- **Key Concepts**:
+  - Building automation using Makefiles
+  - Defining rules, variables, and dependencies in Makefiles
+  - Using Make to compile, build, and execute C++ programs
+
+- **Study Tips**:
+  - Experiment with creating Makefiles for different C++ projects.
+  - Practice defining rules and dependencies in Makefiles for efficient compilation.
+
+### Friday
+- **Topics Covered**:
+  - Git Commands
+  
+- **Key Concepts**:
+  - Using Git for version control in software development
+  - Git commands such as push, commit, pull, and init
+  - Collaboration and file management in GitHub repositories
+
+- **Study Tips**:
+  - Practice using Git commands to manage code repositories.
+  - Understand the workflow for collaborating and version controlling code using Git.
+  
+### Additional Notes:
+- Review lecture slides, notes, and examples from the week.
+- Implement and practice the concepts covered in each topic.
+- Explore online resources and tutorials for further understanding.
+
+## Practice Questions:
+1. What is a vector in C++ and how is it different from an array?
+2. How do you iterate through elements in a vector using a for loop?
+3. Explain the concept of 2D vectors in C++ and provide an example of its usage.
+4. What is the purpose of a Makefile in C++ development and how does it help automate the build process?
+5. Describe the steps involved in the compilation pipeline of a C++ program from source code to executable.
+
+## Schedule:
+- **Monday**:
+  - Review Vectors and Compound Data Structures
+  - Practice creating and manipulating vectors
+- **Tuesday**:
+  - Study 2D Vectors and practice working with nested vectors
+- **Wednesday**:
+  - Explore Compilation and Execution in C++
+  - Experiment with compiling and running C++ programs
+- **Thursday**:
+  - Dive into Build Systems and Makefiles
+  - Create and test Makefiles for different C++ projects
+- **Friday**:
+  - Learn Git Commands and practice version control
+- **Weekend**:
+ ', 

@@ -1,0 +1,49 @@
+# Study Guide: Week 3
+
+## Week 3 Summary:
+Week 3 covered topics like Vectors, Compound Data, 2D Vectors, std::map, Iterators, and Algorithms. It also delved into basic input/output, command-line navigation, compilation, and the Git version control system.
+
+## Study Tips:
+1. **Practice with Vectors:** Understand how vectors work, implement different operations, and iterate through them.
+2. **Understand Compound Data:** Learn how to work with elements in a structured manner.
+3. **Try Git Commands:** Practice using Git commands to manage code versions effectively.
+
+## Timeline:
+- **Day 1:** Focus on understanding and practicing vectors and compound data.
+- **Day 2:** Dive into 2D vectors and std::map concepts.
+- **Day 3:** Learn about input/output basics and command-line operations.
+- **Day 4:** Explore compilation stages, build systems, and the basics of version control with Git.
+
+## Important Topics to Review:
+1. Vectors: Initialization, operations, sizing, and accessing elements.
+2. Compound Data: Working with structured data.
+3. 2D Vectors: Implementing and accessing elements in 2D arrays.
+4. Std::map: Understanding key-value pairs and operations.
+5. Git Commands: Git commit, push, pull, init for version control.
+
+## Practice Questions:
+1. How do you initialize a vector in C++?
+2. Explain the concept of compound data.
+3. What is the purpose of std::map in C++?
+4. How do you iterate through a 2D vector?
+5. What are some common Git commands and their functions?
+
+## Similar Practice Questions:
+1. Implement a program to add elements to a vector and display the contents.
+2. Create a program to initialize and access elements in a 2D vector.
+3. Write a code snippet illustrating the usage of std::map in C++.
+4. Practice navigating through directories using command-line commands.
+5. Experiment with Git commands in a sample repository to understand version control operations.
+
+## Schedule:
+- **Day 1:** Focus on reviewing vectors and compound data concepts.
+- **Day 2:** Dive into 2D vectors and std::map implementations.
+- **Day 3:** Practice basic input/output and command-line operations.
+- **Day 4:** Explore compilation processes, build systems, and Git version control operations.
+
+## Additional Resources:
+- C++ reference materials for vectors, compound data, and 2D arrays.
+- Practice coding exercises on vector manipulation and Git commands.
+- Review lecture notes, make flashcards for key concepts, and engage in discussions for better understanding.
+
+Remember to pace yourself and ensure thorough understanding of each topic before moving on to the next. Happy studying! 📚👩\u200d💻🔍', 
