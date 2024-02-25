@@ -1,0 +1,50 @@
+@keyframes textGradient {
+    0% {
+        background-position: 0% 50%;
+        background-color: rgb(184,184,255); 
+    }
+    50% {
+        background-position: 100% 50%;
+        background-color: #6c8cff; 
+    }
+    100% {
+        background-position: 0% 50%;
+        background-color: rgb(184,184,255); 
+    }
+}
+
+.lower-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Helvetica; 
+    text-align: center;
+    background: linear-gradient(135deg, rgb(184,184,255),rgb(208,244,222));
+    padding: 20px;
+    padding-left: 70px;
+   
+}
+  
+.app-name {
+    font-size: 40px;
+    color: transparent;
+    animation: textGradient 10s linear infinite;
+    background-clip: text;
+}
+  
+.social-media {
+    font-size: 25px;
+    color: transparent;
+    animation: textGradient 10s linear infinite;
+    background-clip: text;
+}
+  
+.social-media a {
+    color: #fff;
+    color: transparent;
+    text-decoration: none;
+    margin-left: 100px;
+}
