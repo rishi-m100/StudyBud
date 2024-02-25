@@ -2,6 +2,7 @@ nav {  /*actual header bar */
     display:flex;
     justify-content: right;
     text-align: center;
+    align-items: center;
     background: linear-gradient(135deg, rgb(184,184,255),rgb(208,244,222));
     padding: 20px;
     padding-left: 70px;
@@ -28,7 +29,7 @@ nav {  /*actual header bar */
 
 nav h1 { /*text on the header */
     display: inline-block;
-    margin: 10px;
+    margin: 10px 30px;
     color: transparent; /* Set text color to transparent */
     background-clip: text; /* Clip the background to the text */
     animation: textGradient 15s linear infinite; /* Apply animation */
@@ -54,6 +55,6 @@ nav h1 { /*text on the header */
 
 .logo{
     margin-right: auto; /* Pushes the logo to the left */
-    margin-left: 0px; /* Add margin to the left for spacing */
-    width: 110px;
+    margin-left: 20px; /* Add margin to the left for spacing */
+    width: 100px;
 }
