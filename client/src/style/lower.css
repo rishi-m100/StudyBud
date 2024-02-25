@@ -1,26 +1,30 @@
 @keyframes textGradient {
     0% {
         background-position: 0% 50%;
-        background-color: rgb(184,184,255); 
+        background-color: rgb(184,184,255); /* Start color */
     }
-    50% {
-        background-position: 100% 50%;
-        background-color: #6c8cff; 
+    33% {
+        background-position: 33% 50%;
+        background-color: black; /* Middle color */
+    }
+    66% {
+        background-position: 66% 50%;
+        background-color: #6c8cff; /* End color */
     }
     100% {
-        background-position: 0% 50%;
-        background-color: rgb(184,184,255); 
+        background-position: 100% 50%;
+        background-color: rgb(184,184,255); /* Start color */
     }
 }
 
 .lower-bar {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:Helvetica; 
+    font-family:sans-serif; 
     text-align: center;
     background: linear-gradient(135deg, rgb(184,184,255),rgb(208,244,222));
     padding: 20px;
