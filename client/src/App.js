@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Button from "./components/Button";
+import Homepage from "./components/Homepage";
 
 const cardProps1 = {
   title: "Upload",
@@ -42,10 +43,11 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header /> 
       <br />
       <br />
       <center>
+        <Homepage/>
         <Card {...cardProps1} />
         {/* <Card {...cardProps2} /> */}
         <Card {...cardProps3} />
