@@ -23,3 +23,7 @@ input[type="file"] {
     background-color: rgb(184,184,255);
     color:white;
     }
+
+    .contents{
+      margin-top: 200px;
+    }

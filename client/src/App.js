@@ -49,12 +49,12 @@ function App() {
       <center>
         <Card {...cardProps1} />
         {/* <Card {...cardProps2} /> */}
-        <Card {...cardProps3} />
+        {/* <Card {...cardProps3} /> */}
       </center>
 
       <br />
 
-      <LowerBar></LowerBar>
+      {/* <LowerBar></LowerBar> */}
       {/* 
       <center>
         <h2>Prediction Accuracy</h2>

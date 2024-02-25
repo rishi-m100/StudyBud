@@ -1,0 +1,33 @@
+ChatCompletionMessage(content='## Study Guide for CS361 HW 4
+
+### Important Topics:
+1. Probability Calculations (Geometric, Binomial, Poisson Distributions)
+2. Expected Value and Variance
+3. Probabilities of Events
+
+### Study Tips:
+- Understand the concepts behind the different probability distributions and when to apply each.
+- Practice solving various probability problems to strengthen your understanding.
+- Focus on calculating expected values, variances, and probabilities accurately.
+
+### Schedule:
+- **Week 1**
+  - Day 1: Review and understand the basic concepts of probability distributions.
+  - Day 2: Practice problems related to geometric distributions.
+  - Day 3: Solve problems on binomial distributions.
+- **Week 2**
+  - Day 1: Work on Poisson distribution problems.
+  - Day 2: Revise expected value and variance calculations.
+  - Day 3: Review all topics and solve mixed problems.
+
+### Practice Questions:
+1. What is the probability of observing a value greater than 0 in problem 1b?
+2. Calculate the expected number of rounds that five people will play in problem 4c.
+3. Find the probability that the airline flight in problem 5.8b travels with 1 or more empty seats.
+4. Determine the probability of having exactly two new posts in problem 5.9c.
+5. Show that a geometric distribution with parameter p has variance (1-p)/p^2 in problem 6.
+
+### Additional Tips:
+- Break down the problems step by step to avoid mistakes in calculations.
+- Check your answers using available solutions or online calculators.
+- Form study groups to discuss and solve complex problems collaboratively.', role='assistant', function_call=None, tool_calls=None)

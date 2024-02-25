@@ -1,0 +1,79 @@
+ChatCompletionMessage(content='# Study Guide: Intro to Unit Testing - CS222 Spring 2024
+
+## Important Topics:
+- **Why write automated tests for code?**
+  - Debugging
+  - Showing code correctness
+  - Improving software quality
+
+- **Types of Testing:**
+  - Unit Testing
+  - Integration Testing
+  - End-to-End Testing
+
+- **Components of Testing:**
+  - Writing Test Suites
+  - Writing Good Test Cases
+  - Integration Testing
+  - End-to-End Testing
+
+- **Writing Test Suites:**
+  - Test cases coverage
+  - Happy and sad paths
+  - Testing API, not implementation
+
+- **Writing Good Test Cases:**
+  - Assertions about output
+  - Descriptive names
+  - Stateless and offline runnable
+
+- **Integration Testing:**
+  - Testing multiple components
+  - Balancing unit and integration tests
+
+- **End-to-End Testing:**
+  - Testing whole application
+  - Following Core User Journeys
+  - Inclusion of external dependencies
+
+- **Improving Test Suites:**
+  - DRY principle
+  - Using mocking libraries
+  - Weekly testing expectation
+
+## Study Tips:
+- Understand the importance of automated testing in the software development process.
+- Practice writing test cases for small code snippets to understand the testing process better.
+- Focus on the concepts of unit testing, integration testing, and end-to-end testing.
+- Practice writing descriptive and effective test cases.
+- Familiarize yourself with mocking libraries and their usage.
+- Ask questions and seek clarification from your mentor regularly.
+- Practice writing tests consistently to enhance your testing skills.
+- Review the provided examples of test cases and try to create similar ones on your own.
+
+## Schedule:
+- **Week 1-2:**
+  - Understand the importance of automated testing.
+  - Learn about different types of testing.
+  - Study how to write effective test suites and test cases.
+
+- **Week 3-4:**
+  - Dive into integration testing and its significance.
+  - Explore end-to-end testing and its role in software quality assurance.
+
+- **Week 5-6:**
+  - Practice writing comprehensive test suites and test cases.
+  - Focus on improving the quality of your test suites.
+
+- **Week 7-8:**
+  - Enhance your understanding of mocking libraries and their application in testing.
+  - Prepare for the Week 9 Quiz on Intro to Testing.
+
+## Practice Questions:
+1. Explain the purpose of unit testing and its benefits in software development.
+2. Differentiate between unit testing, integration testing, and end-to-end testing.
+3. Discuss the importance of writing descriptive test cases and providing meaningful assertions.
+4. Why is it essential to test the API and not the implementation details?
+5. How can mocking libraries help in creating reproducible and efficient tests?
+
+Remember to actively engage with the provided material, seek assistance when needed, and practice consistently to master the concepts covered in this course. Good luck with your studies!', role='assistant', function_call=None, tool_calls=None)

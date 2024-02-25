@@ -7,7 +7,7 @@ from openai import OpenAI
 import json
 import os
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='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')
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
@@ -65,14 +65,23 @@ def extract_text_from_pdf(file):
     # Create a PdfReader object
     pdf_reader = PdfReader(file)
 
-    # Initialize an empty string to store the extracted text
-    text = ''
+    # Initialize an empty list to store the lines of extracted text
+    lines = []
 
     # Iterate through each page in the PDF and extract text
     for page_num in range(len(pdf_reader.pages)):
-        text += pdf_reader.pages[page_num].extract_text()
+        page_text = pdf_reader.pages[page_num].extract_text()
 
-    json_text = json.dumps(text)
+        # Split the page text into lines based on the newline character
+        page_lines = page_text.split('\n')
+
+        # Extend the lines list with the lines from the current page
+        lines.extend(page_lines)
+
+    # Join the lines with newline characters to create the formatted text
+    formatted_text = '\n'.join(lines)
+
+    json_text = json.dumps(formatted_text)
 
     # Generate a unique filename
     converted_filename = generate_unique_filename(file.filename)
@@ -87,9 +96,14 @@ def extract_text_from_pdf(file):
 
     # Write completion to a unique filename
     with open(converted_filename, 'w') as f:
-        f.write(str(completion.choices[0].message))
+        string = str(completion.choices[0].message)
+        string = string.replace('\\n', '\n')
+        string = string.replace("ChatCompletionMessage(content='","")
+        string = string.replace("role='assistant', function_call=None, tool_calls=None)","")
+        f.write(string)
 
-    return str(completion.choices[0].message)
+    return string
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -8,7 +8,7 @@ function Upload() {
 
   const handleUpload = (event) => {
     const formData = new FormData();
-    const files = event.target.files; // Get the selected files
+    const files = event.target.files;
 
     // Loop through each file
     for (let i = 0; i < files.length; i++) {
@@ -28,10 +28,13 @@ function Upload() {
       .then((response) => {
         // Assuming the response contains the content of the files
         console.log("File content:", response.data);
-        // Set the file contents to state to display them
+        // Split the content by \n and render each line as a paragraph
+        const formattedContent = response.data.text
+          .split("\n")
+          .map((line, index) => <p key={index}>{line}</p>);
         setFileContents((prevFileContents) => [
           ...prevFileContents,
-          response.data.text, // Assuming the response contains the text
+          formattedContent,
         ]);
       })
       .catch((error) => {
@@ -55,7 +58,7 @@ function Upload() {
         <div key={index}>
           <p>Uploaded File: {fileName}</p>
           {/* Display the corresponding file content */}
-          <p>File Content: {fileContents[index]}</p>
+          <div className="contents">{fileContents[index]}</div>
         </div>
       ))}
     </div>

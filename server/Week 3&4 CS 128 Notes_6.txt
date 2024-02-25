@@ -1,0 +1,69 @@
+# Study Guide: Week 3 Compilation & Makefiles
+
+## Monday - Compilation Pipeline
+- **Preprocessor:**
+    - Expanded source code file created known as a translational unit
+    - Include headers, use include guards to prevent multiple inclusions
+- **Compiler:**
+    - Checks syntax, type checking, and correctness of code
+    - Errors are caught like missing semicolons or wrong types
+- **Assembler Stage:**
+    - Converts assembly code to object code (machine code)
+- **Linker Stage:**
+    - Creates the final executable by linking object files
+- **Makefiles:**
+    - Automate build processes to compile and link C++ programs
+- **Compile Process:**
+    - Preprocess `gcc main.c -E -o main.i`
+    - Compile `gcc main.i -S -o main.s`
+    - Assemble `gcc main.s -c -o main.o`
+    - Link `gcc main.o -o main.out`
+
+## Tuesday - Makefiles & Build Systems
+- **Makefiles:**
+    - Use Make for automating build processes
+    - Define variables, set rules for compilation & linking
+    - Phony targets for commands or special rules
+- **Automatic Variables:**
+    - Use `$@` to refer to rule output
+- **Deep Dive on Makefiles:**
+    - Configure how inputs are converted to outputs
+- **Special Targets in Make:**
+    - Use phony targets for actions like cleaning or testing
+
+## Wednesday - Git Basics
+- **Git Commands:**
+    - `git init`: Initialize a new repository
+    - `git add`: Add files to staging area
+    - `git commit`: Commit changes to repository
+    - `git push`: Push changes to a remote repository
+    - `git pull`: Pull changes from a remote repository
+
+## Thursday - Line by Line debugging
+- **Debugging Techniques:**
+    - Step into, Step over, Continue for inspecting code flow
+- **Compilation Pipeline in Detail:**
+    - Understand the preprocessing, compilation, assembly, and linking stages
+- **Usage of Makefiles:**
+    - Implement build automation using Makefiles
+
+## Friday - Continued Discussion
+- **Topics Covered:**
+    - Git commands, Makefiles, Compilation pipeline
+- **Implementation Practice:**
+    - Work on practical examples to reinforce concepts
+
+### Study Tips:
+- Practice creating Makefiles for various projects
+- Work on debugging exercises to improve code understanding
+- Regularly review Git commands and version control concepts
+- Collaborate with peers to enhance learning through shared projects
+
+### Practice Questions:
+1. What is the purpose of the preprocessor in C++ compilation?
+2. Explain the steps involved in turning source code into an executable using Makefiles.
+3. Describe how Git facilitates collaborative software development and version control.
+4. How does the linker contribute to the final executable creation in the compilation process?
+5. Discuss the significance of include guards in header files and their role in preventing multiple inclusions.
+
+Remember to refer to the lecture notes and practice implementing these concepts on your own projects for better retention and understanding. Happy studying! 📚🖥️🚀', 
