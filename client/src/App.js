@@ -28,18 +28,18 @@ const cardProps3 = {
   type: "button",
 };
 function App() {
-  const [accuracy, setAccuracy] = useState(null);
+  // const [accuracy, setAccuracy] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/predict") // Update URL if Flask is running on a different port
-      .then((response) => {
-        setAccuracy(response.data.accuracy);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:5000/api/upload") // Update URL if Flask is running on a different port
+  //     .then((response) => {
+  //       setAccuracy(response.data.accuracy);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data:", error);
+  //     });
+  // }, []);
 
   return (
     <div>
