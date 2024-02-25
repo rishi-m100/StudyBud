@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Button from "./components/Button";
+import LowerBar from "./components/Lower";
 
 const cardProps1 = {
   title: "Upload",
@@ -52,6 +53,8 @@ function App() {
       </center>
 
       <br />
+
+      <LowerBar></LowerBar>
       {/* 
       <center>
         <h2>Prediction Accuracy</h2>
@@ -59,6 +62,7 @@ function App() {
       </center> */}
 
       {/* {data && <p>Data from Flask backend: {data}</p>} */}
+      
     </div>
   );
 }
