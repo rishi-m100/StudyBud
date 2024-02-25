@@ -48,7 +48,7 @@ def upload():
             print("Transcription: " + r.recognize_google(audio))
             text=r.recognize_google(audio)
             text = str(text)
-            print(type(text))
+            print(type(text)) 
             
         converted_filename = generate_unique_filename(file.filename)
         completion = client.chat.completions.create(
