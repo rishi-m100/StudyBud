@@ -1,4 +1,5 @@
 nav {  /*actual header bar */
+    font-family:sans-serif; 
     display:flex;
     justify-content: right;
     text-align: center;
@@ -28,6 +29,10 @@ nav {  /*actual header bar */
 }
 
 nav h1 { /*text on the header */
+    font-size: 45px;
+    font-weight: lighter;
+    font-family:sans-serif; 
+    text-shadow: #6c8cff;
     display: inline-block;
     margin: 10px 30px;
     color: transparent; /* Set text color to transparent */
