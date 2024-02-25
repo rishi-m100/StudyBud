@@ -34,7 +34,11 @@ function Upload() {
           .map((line, index) => <p key={index}>{line}</p>);
         setFileContents((prevFileContents) => [
           ...prevFileContents,
+<<<<<<< HEAD
           formattedContent
+=======
+          formattedContent,
+>>>>>>> 83910d994faef73a5ac7960e702a5a534038b237
         ]);
       })
       .catch((error) => {

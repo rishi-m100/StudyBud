@@ -1,1 +1,43 @@
+<<<<<<< HEAD
 how do you welcome back so let's go ahead and get right into this subject on pointers and we'll start out with their first declaration so here's our first Declaration of a pointer go ahead and decompose this to go ahead and discuss what the different parts mean but reading what is pee pee is going to be a pointer to an integer object that is he will eventually hopefully store the address of an integer object so and here it's going to be the bass type asterisk is going to be our declaratory operator pointer MP is going to be the identifier or the name of the object being creative remember a pointer is an object it's just it's value is going to be the address of another object but here's a quite a quick little spin on that we can initialize a pointer to the null pointer which essentially communicates that this thing is not pointing to anything it does not store what say the address of any object it's just it's blank you can think about it that way if we were to be saying down I don't know maybe let's say a phone number or something on an index card the index card could start out blank and we haven't written anything on it that's kind of what this is communicating here it's saying the pointer doesn't contain any useful information at this point
+=======
+# Study Guide for CS361 Homework 4
+
+## Important Topics
+- Probability calculations
+- Geometric probability distribution
+- Binomial distribution
+- Poisson random variables
+- Variance calculations
+
+## Study Tips
+- Understand the basic concepts of probability theory
+- Practice solving various probability problems
+- Review definitions and formulas for different distributions
+- Work through examples to understand the concepts thoroughly
+
+## Study Schedule
+- Day 1: Review probability fundamentals and basic calculations
+- Day 2: Practice problems on geometric and binomial distributions
+- Day 3: Solve problems on Poisson random variables
+- Day 4: Practice calculating variances
+- Day 5: Review all topics and formulas
+
+## Timeline
+- Day 1: Textbook problems 4.7 and 4.12
+- Day 2: Textbook problem 5.9
+- Day 3: Textbook problems 5.17 and 5.19
+- Day 4: Poisson random variable calculations
+- Day 5: Variance calculations with geometric distribution
+
+## Practice Questions
+1. Calculate the probability of observing a value greater than 0 in textbook problem 4.7 part b.
+2. Determine the expected number of rounds five people will play until there is an odd person out in textbook problem 4.12 part c.
+3. Find the probability that the pilot flies in textbook problem 5.17 part a.
+4. Calculate the probability that there are no new posts when you check the CS 361 forum in the given scenario.
+
+## Note
+- Pay attention to the different types of probability distributions and their characteristics.
+- Practice applying the probability formulas to various scenarios.
+- Make sure to understand the reasoning behind each calculation for a better grasp of the concepts.', 
+>>>>>>> 83910d994faef73a5ac7960e702a5a534038b237
