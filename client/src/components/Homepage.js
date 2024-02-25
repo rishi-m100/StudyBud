@@ -4,7 +4,7 @@ import '../style/homepage.css';
 function Homepage() {
   return (
     <div className="homepage">
-      <div className="background-image"></div>
+      {/* <div className="background-image"></div> */}
       <div className="sidebar">
         <p className="description">Our website is dedicated to helping students practice, memorize, and study for exams based on their past notes that they can easily upload to our site.</p>
       </div>
