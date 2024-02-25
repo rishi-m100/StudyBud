@@ -7,7 +7,7 @@ from openai import OpenAI
 import json
 import os
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='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')
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
