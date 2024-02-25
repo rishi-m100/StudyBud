@@ -1,38 +1,52 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-
+# import PyPDF2
+from PyPDF2 import PdfReader
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
-# Load the iris dataset
-iris = load_iris()
-X = iris.data
-y = iris.target
+# Define a route to handle file uploads
+@app.route('/api/upload', methods=['POST'])
+def upload():
+    print("Upload endpoint called")
+    # Check if the request contains a file
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part'})
 
-# Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    file = request.files['file']
 
-# Train a RandomForestClassifier
-clf = RandomForestClassifier(n_estimators=100, random_state=42)
-clf.fit(X_train, y_train)
+    # Check if the file is empty
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'})
 
-# Predict on the test set and calculate accuracy
-y_pred = clf.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
+    # Check if the file is a PDF
+    if not file.filename.endswith('.pdf'):
+        return jsonify({'error': 'Only PDF files are supported'})
 
-# Define a route to serve predictions
-@app.route('/api/predict')
-def predict():
-    # Take some input and make predictions
-    # For simplicity, let's return the accuracy as a JSON response
-    
-    return jsonify({"accuracy": accuracy})
+    # Extract text from the PDF file
+    pdf_text = extract_text_from_pdf(file)
+
+    with open('extracted_text.txt', 'w') as f:
+        f.write(pdf_text)
+    # Return the extracted text
+    response = jsonify({'text': pdf_text})
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')  # Add CORS header
+    return response
+
+
+def extract_text_from_pdf(file):
+    # Create a PdfReader object
+    pdf_reader = PdfReader(file)
+
+    # Initialize an empty string to store the extracted text
+    text = ''
+
+    # Iterate through each page in the PDF and extract text
+    for page_num in range(len(pdf_reader.pages)):
+        text += pdf_reader.pages[page_num].extract_text()
+
+    return text
 
 if __name__ == '__main__':
     app.run(debug=True)
