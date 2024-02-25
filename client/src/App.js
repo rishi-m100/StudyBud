@@ -43,6 +43,8 @@ function App() {
   return (
     <div>
       <Header />
+      <br />
+      <br />
       <center>
         <Card {...cardProps1} />
         {/* <Card {...cardProps2} /> */}
@@ -50,11 +52,11 @@ function App() {
       </center>
 
       <br />
-
+      {/* 
       <center>
         <h2>Prediction Accuracy</h2>
         <p>{accuracy !== null ? `Accuracy: ${accuracy}` : "Loading..."}</p>
-      </center>
+      </center> */}
 
       {/* {data && <p>Data from Flask backend: {data}</p>} */}
     </div>

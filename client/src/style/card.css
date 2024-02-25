@@ -1,9 +1,10 @@
 .card{
     text-align: center;
     justify-content: center;
-    display: inline-block;
+    display: block;
     border: 2px solid #000;
     width: 500px;
+    height: 200px;
     padding: 10px;
     margin: 10px;
 }
