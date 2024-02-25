@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Button from "./components/Button";
-import Homepage from "./components/Homepage";
 import LowerBar from "./components/Lower";
 
 const cardProps1 = {
@@ -29,26 +28,25 @@ const cardProps3 = {
   type: "button",
 };
 function App() {
-  // const [accuracy, setAccuracy] = useState(null);
+  const [accuracy, setAccuracy] = useState(null);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:5000/api/upload") // Update URL if Flask is running on a different port
-  //     .then((response) => {
-  //       setAccuracy(response.data.accuracy);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data:", error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/predict") // Update URL if Flask is running on a different port
+      .then((response) => {
+        setAccuracy(response.data.accuracy);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
 
   return (
     <div>
-      <Header /> 
+      <Header />
       <br />
       <br />
       <center>
-        <Homepage/>
         <Card {...cardProps1} />
         {/* <Card {...cardProps2} /> */}
         <Card {...cardProps3} />

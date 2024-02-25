@@ -1,10 +1,36 @@
+@keyframes eek {
+    0%{
+        border: 3px solid #000;
+        background-color: white;
+    }
+    33%{
+        border: 3px solid #6c8cff;
+        background-color: whitesmoke;
+    }
+    66%{
+        border: 3px solid rgb(184,184,255);
+        background-color: whitesmoke;
+    }
+    100%{
+        border: 3px solid #000;
+        background-color: whitesmoke;
+    }
+}
 .card{
     text-align: center;
     justify-content: center;
     display: block;
-    border: 2px solid #000;
+    border: 3px solid;
     width: 500px;
     height: 200px;
-    padding: 10px;
+    padding: 50px;
     margin: 10px;
+    animation: eek 2s step-stop;
 }
+
+
+.card:hover {
+    animation: eek 20s step-start;
+    border-color: #6c8cff;
+}
+        
