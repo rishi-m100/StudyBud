@@ -1,11 +1,13 @@
 import React from "react";
 import "../style/header.css";
 
+
 const Header = () => {
   return (
     <header>
       {/* <h1>{title}</h1> */}
       <nav>
+        <img className="logo" src="assets/learning.jpg" />
         <h1>Home</h1>
         <h1>Upload</h1>
         <h1>Practice</h1>
