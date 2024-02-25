@@ -11,28 +11,29 @@ const cardProps1 = {
   title: "Upload",
   button: "Upload",
   content: "Upload your files here.",
+  type: "upload",
 };
 
-const cardProps2 = {
-  title: "Practice",
-  button: "Practice",
-  content: "See your practice questions.",
-};
+// const cardProps2 = {
+//   title: "Practice",
+//   button: "Practice",
+//   content: "See your practice questions.",
+// };
 
 const cardProps3 = {
   title: "Study Plan",
   button: "Study",
   content: "View your study plan here.",
+  type: "button",
 };
-
 function App() {
-  const [data, setData] = useState(null);
+  const [accuracy, setAccuracy] = useState(null);
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:5000/api/data")
+      .get("http://localhost:5000/api/predict") // Update URL if Flask is running on a different port
       .then((response) => {
-        setData(response.data);
+        setAccuracy(response.data.accuracy);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -44,12 +45,18 @@ function App() {
       <Header />
       <center>
         <Card {...cardProps1} />
-        <Card {...cardProps2} />
+        {/* <Card {...cardProps2} /> */}
         <Card {...cardProps3} />
       </center>
 
       <br />
-      {data && <p>Data from Flask backend: {data}</p>}
+
+      <center>
+        <h2>Prediction Accuracy</h2>
+        <p>{accuracy !== null ? `Accuracy: ${accuracy}` : "Loading..."}</p>
+      </center>
+
+      {/* {data && <p>Data from Flask backend: {data}</p>} */}
     </div>
   );
 }
