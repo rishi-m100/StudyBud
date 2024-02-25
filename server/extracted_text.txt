@@ -1,0 +1,134 @@
+Intro to Unit Testing 
+CS222 Spring 2024 Why do we write automated tests for code? 
+1.For debugging 
+2.To show that our code is correct 
+3.To show that our code does not work
+4.To reduce the risk of relying on our code 
+5.To improve software quality 
+Credit: Gina Bai Types of testing 
+●Unit testing 
+○Test small pieces ( units) of code in isolation 
+●Integration testing 
+○Test how multiple pieces of code work together 
+●End-to-end testing 
+○Test the entire application as experienced by users What ar e tests? 
+●Automated pieces of code that make sure the end result of your code is 
+correct 
+●Tests make assertions  about the output of code, but don’t care about what 
+the code does to get it 
+○In other words, test that an API matches the specification 
+●Tests (usually) are not formal proofs of correctness: they only check the 
+cases you thought of 
+function double(x) 
+2 * x 
+function doubleBad(x) 
+if x = 0 then 1 else 2 * x What should you test? 
+●Would you bother writing a test for double on the previous slide? 
+○Probably not. Why? 
+●Small functions are easy to get right – time spent writing tests might be 
+better spent elsewhere! 
+●What about a “simple” function called computeInterestEarned() 
+○Why test this? 
+●The rigor of testing should be proportional to the cost of bugs 
+●Test the API, not the implementation 
+○(Don’t test private methods) Writing a test suite 
+●A test suite  contains multiple tests for a given unit 
+●Each test is generally called a test case 
+●Test cases should cover: 
+○All essential requirements 
+○Both happy and sad paths (happy path = does not generate errors, sad = errors) 
+●Test cases should be small, and only test one or a few part of the API surface Writing a test suite: example 
+Interface BinaryTree 
+addNode(string) 
+rebalance() 
+deleteNode(string) 
+checkExists(string) 
+●Node exists after being  
+added 
+●Multiple nodes exist  
+after add and rebalance 
+●Node no longer exists  
+after being deleted 
+●Deleting a node raises  
+an error 
+●Rebalancing an empty  
+tree does not error 
+●checkExists in empty  
+tree Writing a test suite: your turn 
+Interface LinkedList 
+addNode(string) 
+sort() 
+deleteNode(string) 
+checkExists(string) 
+iterator() Writing good test cases 
+●A test case should always assert either: 
+○Something about the output 
+○That a certain exception was thrown 
+●A test case should be descriptively named 
+●A test case should not have too many assertions 
+○If you have > 4-5, consider splitting into multiple test cases 
+●Not depend on external resources (i.e. an internet connection) 
+○Test cases should be stateless  and able to run offline Writing good test cases: example 
+Interface BinaryTree 
+addNode(string) 
+rebalance() 
+deleteNode(string) 
+checkExists(string) 
+●Node exists after being  
+added 
+○Create new node 
+○Assert checkExists  
+on that node == true 
+●Rebalancing an empty  
+tree does not error 
+○Create a tree 
+○Rebalance it Writing good test cases: your turn 
+Interface LinkedList 
+addNode(string) 
+sort() 
+deleteNode(string) 
+checkExists(string) 
+iterator() Integration testing 
+●Test cases should now test multiple components together 
+○Example: instead of testing one method in a class, test calling several 
+○Example: instead of testing just one class, test two that interact with one another 
+●The balance of unit and integration tests depends on your needs 
+○Integration might have more “bang for the buck,” unit is more rigorous 
+●Tests should still avoid external dependencies End-to-end testing 
+●Test cases should now test your whole application, following CUJs (core user 
+journeys) 
+○Example: can a user sign in and then reset their password? 
+○Example: can a user sign in and upload a photo? 
+●These should  have external dependencies, just like your application would in 
+the real world Improving your suites 
+●DRY = don’t repeat yourself 
+○You should try to write DRY code 
+●Sometimes many test cases do the same setup steps, i.e. creating an 
+instance of a class 
+●Testing libraries support “before” blocks, where you can put shared setup 
+codeUseful things to know 
+●“Mocking” libraries let you write your own implementations of the outside 
+world
+○Use these where necessary in unit and integration tests 
+●Your mentor will have advice on testing frameworks to use for your 
+language/framework of choice 
+●We expect you to write tests every week for your code! Mocking code 
+●Good tests are reproducible and not impacted by the outside world 
+●Mocking is one way to achieve this 
+●A mocking library allows the test writer to provide hardcoded 
+implementations of the outside world 
+○In other words, implement basic versions of APIs that your code uses 
+●Too many mocks is a code smell: often, the outside world can just be passed 
+as a parameter instead 
+@beforeEach { 
+mock(Database.load, (“users”, “*”), [{name: “Ryan}]) 
+}
+// tests ...Wrapping up 
+●Final draft of proposal due Friday! 
+○Start coding after that! 
+●Mentor weekly meetings start next week! 
+●Week 4 Quiz (Intro to GitHub) due this Friday 
+●Week 5 Quiz (Intro to Testing) is opened at the start of lecture, due next 
+Friday
+●Post any technical questions you have on Campuswire after asking your 
+mentor! 
