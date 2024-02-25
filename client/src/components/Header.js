@@ -8,7 +8,7 @@ const Header = () => {
       <nav>
         <h1>Home</h1>
         <h1>Upload</h1>
-        <h1>Practice</h1>
+        {/* <h1>Practice</h1> */}
         <h1>Study plan</h1>
       </nav>
 {/* 
