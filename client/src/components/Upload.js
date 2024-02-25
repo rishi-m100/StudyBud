@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../style/button.css";
+import "../style/upload.css";
 
 function Upload() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -28,13 +28,12 @@ function Upload() {
   };
 
   return (
-    <div className="dynamic-button-container">
-      <input
-        className="dynamic-button"
-        type="file"
-        onChange={handleFileChange}
-      />
-      {/* <button onClick={handleUpload}>Upload</button> */}
+    //   <input type="file" onChange={handleFileChange} />
+    <div>
+      <label for="file-upload" class="custom-file-upload">
+        Upload
+      </label>
+      <input id="file-upload" type="file" onChange="handleFileChange" />
     </div>
   );
 }
