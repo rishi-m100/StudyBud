@@ -1,0 +1,73 @@
+# Exam Study Guide
+
+## Week 3
+
+### Monday
+- **Topic:** Vectors and Compound Data in C++
+- **Important Concepts:**
+  - Using `std::vector` in C++
+  - Declaring and initializing vectors
+  - Accessing elements in a vector using indices
+  - Methods and operations on vectors like `push_back()`, `size()`, and `insert()`
+- **Practice Questions:**
+  1. How to declare and initialize a vector in C++?
+  2. Explain the difference between `push_back()` and `insert()` in vectors.
+  3. Access the third element of a vector `myVector`.
+
+### Tuesday
+- **Topic:** 2D Vectors and Maps in C++
+- **Important Concepts:**
+  - Creating and manipulating 2D vectors in C++
+  - Understanding `std::map` data structure
+  - Inserting, accessing, and iterating through maps
+- **Practice Questions:**
+  1. How do you create a 2D vector in C++?
+  2. Explain the usage of `std::map` and its benefits over other data structures.
+  3. Access the value associated with the key "John" in a map called `nameToAge`.
+
+## Week 4
+
+### Wednesday
+- **Topic:** Compilation and Execution in C++
+- **Important Concepts:**
+  - Compilation pipeline stages: Preprocessor, Compiler, Assembler, Linker
+  - Understanding the role of the Compiler in converting C++ code to Assembly
+  - Using Clang/Clang++ for compilation of C/C++ code
+- **Practice Questions:**
+  1. Explain the steps involved in the compilation pipeline for a C++ program.
+  2. What is the role of the Assembler in the compilation process?
+  3. How can you compile a C++ program using Clang?
+
+### Thursday
+- **Topic:** Build Systems and Makefiles
+- **Important Concepts:**
+  - Understanding the concept of Build Systems
+  - Using Makefiles for automating the build process
+  - Defining targets, dependencies, and rules in a Makefile
+- **Practice Questions:**
+  1. Describe the purpose of a Makefile in a C++ project.
+  2. How do you define dependencies in a Makefile?
+  3. Explain the significance of variables and automatic variables in Makefiles.
+
+### Friday
+- **Topic:** Revision and Git Commands
+- **Important Concepts:**
+  - Git commands for version control (push, commit, pull, init)
+  - Debugging techniques using Git and version control
+- **Practice Questions:**
+  1. Describe the steps involved in pushing changes to a Git repository.
+  2. How do you commit changes to a Git repository?
+  3. Explain the purpose of the `git pull` command in Git.
+
+## Study Tips
+- Review and practice coding examples related to vectors, maps, and makefiles.
+- Create flashcards for key concepts and commands in C++ and Git.
+- Schedule regular practice sessions to reinforce understanding and skills.
+- Collaborate with peers for group study and discussions.
+
+## Study Schedule
+- **Monday - Wednesday:** Focus on understanding vectors, maps, and compilation process.
+- **Thursday - Friday:** Study and practice makefiles, build systems, and Git commands.
+- **Weekend:** Review all topics, practice coding examples, and prepare for potential exam questions.
+
+Remember to take breaks, stay hydrated, and get enough rest to ensure optimal learning and retention. Good luck with your studies!', 

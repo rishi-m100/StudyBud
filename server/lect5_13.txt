@@ -1,0 +1,72 @@
+# Study Guide: Intro to Unit Testing
+
+## Course: CS222 Spring 2024
+
+### Importance of Automated Testing
+- Debugging
+- Ensuring code correctness
+- Reducing risks in code reliance
+- Improving software quality
+
+### Types of Testing
+- **Unit Testing**: Testing small code units in isolation
+- **Integration Testing**: Testing interaction between multiple code components
+- **End-to-End Testing**: Testing the whole application as experienced by users
+
+### Writing Tests
+- Tests are automated code pieces ensuring code output correctness
+- Tests make assertions about output without caring about code implementation
+- Tests are not formal proofs but check expected scenarios
+- Rigor of testing based on bug costs; test the API, not implementation
+
+### Writing Test Suites
+- Test suite contains multiple test cases for a unit
+- Test cases should cover essential requirements and happy/sad paths
+- Test cases should be small and focused on specific API parts
+
+### Writing Good Test Cases
+- Test cases should assert output or thrown exceptions
+- Descriptive test case names are important
+- Limit assertions in a test case to maintain clarity
+- Test cases should not depend on external resources
+
+### Integration Testing
+- Tests should include multiple components working together
+- Balance of unit and integration tests varies based on needs
+
+### End-to-End Testing
+- Tests should cover entire application scenarios following core user journeys
+- Include external dependencies to mirror real-world application behavior
+
+### Improving Test Suites
+- Practice DRY (Don’t Repeat Yourself) coding principle
+- Use testing libraries for shared setup code
+- Utilize mocking libraries to simulate outside world behavior in tests
+
+### Important Examination and Submission Deadlines
+- Final draft of proposal due Friday
+- Week 4 Quiz (Intro to GitHub) due this Friday
+- Week 5 Quiz (Intro to Testing) is opened at the start of lecture, due next Friday
+
+### Study Tips
+1. Understand the importance and types of testing
+2. Practice writing effective test cases and test suites
+3. Balance unit and integration testing based on project needs
+4. Familiarize yourself with mocking libraries and testing frameworks
+5. Practice writing tests regularly and seek guidance from your mentor
+
+### Sample Practice Questions
+1. Why do we write automated tests for code?
+2. What is the difference between unit testing and end-to-end testing?
+3. What should test cases in a test suite cover?
+4. How can you improve the reproducibility of tests using mocking?
+5. When should you use integration testing over unit testing?
+
+### Schedule:
+- **Week 1-2**: Introduction to unit testing concepts
+- **Week 3-4**: Hands-on practice with writing test cases and test suites
+- **Week 5-6**: Understanding integration testing and end-to-end testing
+- **Week 7-8**: Exploring mocking libraries and advanced testing techniques
+- **Week 9-10**: Reviewing for quizzes and finalizing testing skills
+
+Remember to engage with the course material actively, seek clarification from your mentor, and practice regularly to excel in unit testing. Good luck with your studies!', 

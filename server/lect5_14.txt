@@ -1,0 +1,50 @@
+**Study Guide: Intro to Unit Testing - CS222 Spring 2024**
+
+**Timeline:**
+
+- **Week 1-3:**
+  - Introduction to why automated testing is important.
+  - Types of testing: Unit testing, integration testing, and end-to-end testing.
+  - Understanding what tests are and their purpose in software development.
+  
+- **Week 4-6:**
+  - Writing test suites and good test cases.
+  - Integration testing and balancing unit and integration tests.
+  - Introduction to end-to-end testing and its importance.
+  
+- **Week 7-9:**
+  - Improving test suites by following best practices such as DRY code.
+  - Understanding mocking libraries and their role in testing.
+  - Weekly tests for code are expected.
+  
+- **Final Week:**
+  - Submit final draft of proposal.
+  - Start coding after final proposal submission.
+  - Attend mentor meetings regularly.
+  - Complete Week 4 Quiz on Intro to GitHub.
+  - Complete Week 5 Quiz on Intro to Testing.
+
+**Study Tips:**
+1. Take notes during lectures highlighting key concepts and terms.
+2. Practice writing test cases for different scenarios to strengthen understanding.
+3. Collaborate with peers to discuss testing strategies and share knowledge.
+4. Stay organized with a study schedule to balance coursework and test preparation.
+5. Seek help from mentors or online resources for clarifications on complex topics.
+
+**Important Topics to Focus on:**
+- Importance of automated testing in software development.
+- Types of testing: Unit, integration, and end-to-end testing.
+- Writing test suites and good test cases.
+- Balancing unit and integration tests.
+- Using mocking libraries for testing.
+- Weekly test expectations and submission deadlines.
+
+**Practice Questions:**
+1. What are the main purposes of writing automated tests for code?
+2. Explain the differences between unit testing, integration testing, and end-to-end testing.
+3. Discuss the significance of writing good test cases and naming conventions.
+4. Why is it important to avoid external dependencies in test cases?
+5. How can mocking libraries be utilized in testing processes?
+6. Describe the concept of "DRY" in relation to writing test cases.
+
+By following this study guide, you will be well-prepared to understand the fundamentals of unit testing and apply them effectively in your software development projects. Good luck with your studies in CS222 Spring 2024!', 

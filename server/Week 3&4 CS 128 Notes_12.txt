@@ -1,0 +1,43 @@
+# Computer Science 128 Study Guide
+
+## Week 3
+
+### Monday:
+- **Topics Covered**: Vectors, Compound Data
+- **Key Points**:
+  - Vectors in C++ are dynamic arrays that can store elements of the same type.
+  - Compound data in the standard library includes containers, iterators, and algorithms like vectors.
+- **Study Tips**:
+  - Practice initializing and using vectors with different data types.
+  - Understand the methods and behaviors associated with vectors in C++.
+- **Practice Questions**:
+  1. How do you declare and initialize a vector in C++?
+  2. Explain the difference between accessing elements in a vector using `[]` and `.at()`.
+
+### Tuesday:
+- **Topics Covered**: 2D Vectors
+- **Key Points**:
+  - 2D vectors in C++ are similar to nested vectors, creating a matrix-like structure.
+  - Use 2D vectors for storing data in rows and columns.
+- **Study Tips**:
+  - Practice initializing and iterating through 2D vectors.
+  - Understand the concept of vectors of vectors for handling 2D data.
+- **Practice Questions**:
+  1. How do you declare a 2D vector in C++?
+  2. Explain how to access elements in a 2D vector using the `at()` method.
+
+## Tips for Effective Studying:
+
+- **Consistent Practice**: Regularly practice coding to solidify concepts.
+- **Interactive Learning**: Engage in coding challenges and group study sessions.
+- **Ask for Help**: Reach out to peers, instructors, or online resources for clarification.
+- **Create Summaries**: Write concise summaries of each topic for quick revision.
+
+## Study Schedule:
+
+- **Day 1**: Focus on understanding vectors in C++. Practice initialization and manipulation.
+- **Day 2**: Dive into 2D vectors and practice creating and accessing elements.
+- **Day 3**: Review compound data structures and implement algorithms using vectors.
+- **Day 4**: Consolidate knowledge with practice questions and revision.
+
+Remember to stay consistent in your study routine and seek help when needed. Good luck with your studies!', 

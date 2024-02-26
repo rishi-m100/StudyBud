@@ -6,8 +6,14 @@ from pydub import AudioSegment
 from openai import OpenAI
 import json
 import os
+from dotenv import load_dotenv
 
-client = OpenAI(api_key='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')
+load_dotenv()
+
+key = os.getenv("OPENAI_API_KEY")
+
+
+client = OpenAI(api_key=key)
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})

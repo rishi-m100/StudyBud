@@ -1,0 +1,63 @@
+# Computer Science 128 Study Guide
+
+## Week 3 Notes
+### Monday
+**Topics:**
+- Vectors & Compound Data
+- Using Standard Library `std`
+- Containers like vectors, strings, maps
+- Compound Data and `std::vector`
+
+**Key Concepts:**
+- Vectors: Dynamically sized arrays
+- Iterating through vectors
+- Compound data types
+- Using `.at()` to access elements
+- Difference between `[]` and `.at()`
+- Sequence of homogeneous types
+
+**Study Tips:**
+- Practice declaring and initializing vectors with different data types.
+- Work on iterating through vectors using both `for` loop and range-based loop (`for:each`).
+
+### Tuesday
+**Topics:**
+- 2D Vectors in C++
+- Nested vectors
+- Accessing and modifying elements in 2D vectors
+- Iterating through 2D vectors
+
+**Key Concepts:**
+- 2D Vectors: Vector of vectors
+- Accessing elements in 2D vectors
+- Nested vector declaration and manipulation
+- Using `.at()` with nested vectors
+
+**Study Tips:**
+- Practice creating and modifying 2D vectors.
+- Understand the differences between 1D and 2D vectors in terms of accessing elements.
+
+## Homework Assignments:
+1. Implement a program using nested vectors to store and display a 2D matrix.
+2. Create a vector of strings and sort them in ascending order using algorithms from the standard library.
+3. Write a program to iterate through a vector of integers and find the sum of all elements.
+
+## Important Links:
+- [C++ Reference: Vector Behaviors](https://cplusplus.com/reference/vector/vector/)
+- [C++ Map Reference](https://cplusplus.com/reference/map/map/)
+
+## Exam Preparation Suggestions:
+1. Review the fundamentals of vectors, compound data types, and 2D vectors in C++.
+2. Practice iterating through vectors and accessing elements.
+3. Understand the differences between various data structures and when to use them.
+
+---
+
+### Additional Practice Questions:
+1. Explain the difference between `vector.at(index)` and `vector[index]` in C++.
+2. How can you iterate through a vector using a range-based for loop in C++?
+3. Write a C++ code snippet to create a 2D vector and access an element at a specific index.
+
+Remember to refer back to your lecture notes, complete the given assignments, and test your understanding with additional practice problems to reinforce your knowledge before the quiz/demo.
+
+Good luck with your studies!', 
