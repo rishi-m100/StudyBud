@@ -9,7 +9,7 @@ Flask, and OpenAI API for the backend
 
 ## Features
 
-Use of LLM to create a useful study plan and practice questions.
+Use of LLM to create a useful study plan and practice questions
 
 Implementation of OpenAI API to suit the application
 
