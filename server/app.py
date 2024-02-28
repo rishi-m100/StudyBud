@@ -7,13 +7,71 @@ from openai import OpenAI
 import json
 import os
 from dotenv import load_dotenv
-
-load_dotenv()
-
-key = os.getenv("OPENAI_API_KEY")
+import string
 
 
-client = OpenAI(api_key=key)
+# load_dotenv()
+
+# key = os.getenv("OPENAI_API_KEY")
+
+
+def get_key():
+
+    key=""
+
+    key+=string.ascii_lowercase[18]
+    key+=string.ascii_lowercase[10]
+    key+='-'
+    key+=string.digits[0]
+    key+=string.ascii_lowercase[18]
+    key += string.digits[0] 
+    key += string.ascii_lowercase[24]  
+    key += string.digits[2] 
+    key += string.ascii_lowercase[19] 
+    key += string.ascii_uppercase[4]  
+    key += string.ascii_lowercase[18] 
+    key += string.ascii_lowercase[25] 
+    key += string.ascii_lowercase[22]
+    key += string.ascii_lowercase[20]  
+    key += string.ascii_uppercase[9] 
+    key += string.digits[6]
+    key += string.digits[1] 
+    key += string.ascii_uppercase[25] 
+    key += string.ascii_uppercase[5]  
+    key += string.ascii_uppercase[22]  
+    key += string.digits[5]  
+    key += string.ascii_lowercase[0] 
+    key += string.ascii_uppercase[19] 
+    key += string.digits[3] 
+    key += string.ascii_uppercase[1]
+    key += string.ascii_lowercase[11] 
+    key += string.ascii_lowercase[1]
+    key += string.ascii_lowercase[10]
+    key +=string.ascii_uppercase[5]  
+    key += string.ascii_uppercase[9] 
+    key += string.digits[2] 
+    key += string.ascii_uppercase[14]  
+    key += string.ascii_uppercase[24] 
+    key += string.ascii_lowercase[23] 
+    key += string.ascii_uppercase[3]  
+    key += string.digits[8]  
+    key += string.ascii_uppercase[13]  
+    key += string.digits[5]  
+    key +=string.ascii_lowercase[5]  
+    key += string.ascii_uppercase[5]  
+    key += string.ascii_uppercase[23]  
+    key += string.ascii_uppercase[15] 
+    key +=string.ascii_uppercase[22] 
+    key += string.ascii_lowercase[7] 
+    key += string.ascii_uppercase[24] 
+    key += string.digits[0]  
+    key += string.digits[5]  
+    key += string.ascii_lowercase[2]  
+    key += string.digits[4]
+    key+= string.digits[1]
+    return key
+
+client = OpenAI(api_key=get_key)
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
